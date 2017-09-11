@@ -24,7 +24,7 @@ static void invokeArm11Function(Arm11Operation op)
 
 static void loadFirm(bool isNand)
 {
-    static const char *firmName = "boot.firm";
+    static const char *firmName = "ntrboot.firm";
     Firm *firmHeader = (Firm *)0x080A0000;
     if(fileRead(firmHeader, firmName, 0x200, 0) != 0x200) return;
 
